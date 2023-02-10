@@ -123,13 +123,13 @@ strong {
 }
 
 .border-radius-top {
-    border-top-right-radius: 0.25rem;
-    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
 }
 
 .border-radius-bottom {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
 }
 
 .list-notificaitons {
@@ -159,7 +159,7 @@ strong {
     position: relative;
     line-height: 1;
     padding-left: 0.75rem;
-    border-left: 0.25rem solid #007DFF;
+    border-left: 0.25rem solid #7E58E3;
 }
 
 
@@ -178,8 +178,8 @@ strong {
             border-top-right-radius: 0.25rem;
             &.active {
                 background-color: #fff;
-                color: #007DFF;
-                border-top-color: #007DFF;
+                color: #7E58E3;
+                border-top-color: #7E58E3;
             }
         }
     }
@@ -207,8 +207,14 @@ strong {
 
 .card {
     .card-header {
+        min-height: 2.5rem;
         .dropdown-menu {
             transform: translate(0px, 48px);
+        }
+        .btn-arrow-toggle {
+            padding-top: 0;
+            padding-bottom: 0;
+            min-height: 1rem;
         }
     }
 }
@@ -235,9 +241,12 @@ strong {
         &:focus-within {
             .form-control,
             .input-group-text {
-                border-color: #000330 !important;
+                border-color: #7E58E375 !important;
                 transition: none;
             }
+        }
+        .form-control:disabled+.input-group-text {
+            background-color: #e9ecef;
         }
     }
     &.input-group-search {

@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BEGIN Includes Styles  -->
+    <script src="includes/styles.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- END Include Styles  -->
+    <title>Welly Fitness CMS - List</title>
+</head>
+
+<body>
+    <!-- BEGIN Site -->
+    <div class="site">
+        <script src="includes/site-sidebar.js"></script>
+        <!-- BEGIN Site Main -->
+        <div class="site-main px-3">
+            <div class="container-fluid py-3">
+                <div class="mb-3 d-flex align-items-center justify-content-between">
+                    <h4 class="mb-0">Trang danh sách</h4>
+                    <a href="new.html" class="btn btn-outline-primary"><i class="fa-solid fa-plus"></i> Thêm mới</a>
+                </div>
+                <!-- BEGIN List Header -->
+                <div class="row align-items-end">
+                    <div class="col-lg-9 col-md-8">
+                        <ul class="nav nav-list mb-2">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active" aria-current="page">Tất cả <span class="badge bg-secondary">05</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Thùng rác <span class="badge bg-secondary">0</span></a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="d-flex align-items-center me-3">
+                                <select class="form-select" style="min-width: 8rem;" aria-label="Select Action">
+                                    <option selected>Hành động</option>
+                                    <option value="1">Chỉnh sửa</option>
+                                    <option value="2">Xoá</option>
+                                </select>
+                                <button class="btn btn-outline-secondary ms-2 w-100">Áp dụng</button>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <select class="form-select me-2" style="min-width: 10rem;" aria-label="Select Action">
+                                    <option selected>Thời gian</option>
+                                    <option value="1">1 tháng</option>
+                                </select>
+                                <select class="form-select me-2" style="min-width: 10rem;" aria-label="Select Action">
+                                    <option selected>Chọn danh mục</option>
+                                    <option value="1">Danh mục 1</option>
+                                </select>
+                                <select class="form-select me-2" style="min-width: 10rem;" aria-label="Select Action">
+                                    <option selected>Trạng thái</option>
+                                    <option value="1">Đã xuất bản</option>
+                                    <option value="2">Bản nháp</option>
+                                </select>
+                                <button class="btn btn-secondary w-100">Lọc</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="input-group input-group-fake-input input-group-search mb-3">
+                            <span class="input-group-text border-end-0 pe-0 ps-3"><i class="fa-solid fa-search opacity-50"></i></span>
+                            <input type="text" class="form-control border-start-0" value="" placeholder="Tìm kiếm">
+                        </div>
+                    </div>
+                </div>
+                <!-- END List Header -->
+                <!-- BEGIN List -->
+                <div class="bg-white rounded shadow-sm mb-2">
+                    <div class="table-responsive">
+                        <table class="table table-list table-hover table-striped mb-0" cellspacing="0" cellpading="0">
+                            <thead>
+                                <tr class="align-middle">
+                                    <th width="30">
+                                        <div class="form-check">
+                                            <input class="form-check-input check-all" type="checkbox" value="" id="all">
+                                            <label class="form-check-label" for="all">
+                                              &nbsp;
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th>Tiêu đề</th>
+                                    <th>Thuộc tính</th>
+                                    <th class="text-end">Trạng thái</th>
+                                    <th class="text-end" width="200">Thời gian</th>
+                                    <th width="90" class="text-end">&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="align-middle">
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="item-01">
+                                            <label class="form-check-label" for="item-01">
+                                              &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#">Tiêu đề của bài viết</a>
+                                    </td>
+                                    <td>
+                                        <a href="#">Danh mục 1</a>
+                                    </td>
+                                    <td class="text-end"><span class="badge bg-success">Đã xuất bản</span></td>
+                                    <td class="text-end">
+                                        <div class="text-end">
+                                            Lần sửa gần nhất<br> 06/01/2023 lúc 8:24 sáng
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <button class="btn btn-sm btn-none text-danger btn-remove"><i class="fa-solid fa-trash-can"></i></button>
+                                        <button class="btn btn-sm btn-none text-dark btn-edit"><i class="fa-solid fa-pen"></i></button>
+                                    </td>
+                                </tr>
+                                <tr class="align-middle">
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="item-02">
+                                            <label class="form-check-label" for="item-02">
+                                              &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#">Tiêu đề của bài viết</a>
+                                    </td>
+                                    <td>
+                                        <a href="#">Danh mục 1</a>
+                                    </td>
+                                    <td class="text-end"><span class="badge bg-success">Đã xuất bản</span></td>
+                                    <td class="text-end">
+                                        <div class="text-end">
+                                            Lần sửa gần nhất<br> 06/01/2023 lúc 8:24 sáng
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <button class="btn btn-sm btn-none text-danger btn-remove"><i class="fa-solid fa-trash-can"></i></button>
+                                        <button class="btn btn-sm btn-none text-dark btn-edit"><i class="fa-solid fa-pen"></i></button>
+                                    </td>
+                                </tr>
+                                <tr class="align-middle">
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="item-03">
+                                            <label class="form-check-label" for="item-03">
+                                              &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#">Tiêu đề của bài viết</a>
+                                    </td>
+                                    <td>
+                                        <a href="#">Danh mục 1</a>&nbsp;<a href="#">Danh mục 5</a>
+                                    </td>
+                                    <td class="text-end"><span class="badge bg-secondary">Bản nháp</span></td>
+                                    <td class="text-end">
+                                        <div class="text-end">
+                                            Lần sửa gần nhất<br> 06/01/2023 lúc 8:24 sáng
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <button class="btn btn-sm btn-none text-danger btn-remove"><i class="fa-solid fa-trash-can"></i></button>
+                                        <button class="btn btn-sm btn-none text-dark btn-edit"><i class="fa-solid fa-pen"></i></button>
+                                    </td>
+                                </tr>
+                                <tr class="align-middle">
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="item-04">
+                                            <label class="form-check-label" for="item-04">
+                                              &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#">Tiêu đề của bài viết</a>
+                                    </td>
+                                    <td>
+                                        <a href="#">Danh mục 2</a>
+                                    </td>
+                                    <td class="text-end"><span class="badge bg-success">Đã xuất bản</span></td>
+                                    <td class="text-end">
+                                        <div class="text-end">
+                                            Lần sửa gần nhất<br> 06/01/2023 lúc 8:24 sáng
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <button class="btn btn-sm btn-none text-danger btn-remove"><i class="fa-solid fa-trash-can"></i></button>
+                                        <button class="btn btn-sm btn-none text-dark btn-edit"><i class="fa-solid fa-pen"></i></button>
+                                    </td>
+                                </tr>
+                                <tr class="align-middle">
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="item-05">
+                                            <label class="form-check-label" for="item-05">
+                                              &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#">Tiêu đề của bài viết</a>
+                                    </td>
+                                    <td>
+                                        <a href="#">Danh mục 1</a>
+                                    </td>
+                                    <td class="text-end"><span class="badge bg-success">Đã xuất bản</span></td>
+                                    <td class="text-end">
+                                        <div class="text-end">
+                                            Lần sửa gần nhất<br> 06/01/2023 lúc 8:24 sáng
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <button class="btn btn-sm btn-none text-danger btn-remove"><i class="fa-solid fa-trash-can"></i></button>
+                                        <button class="btn btn-sm btn-none text-dark btn-edit"><i class="fa-solid fa-pen"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="align-middle">
+                                    <th width="30" class="border-bottom-0">
+                                        <div class="form-check">
+                                            <input class="form-check-input check-all" type="checkbox" value="" id="all">
+                                            <label class="form-check-label" for="all">
+                                              &nbsp;
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th class="border-bottom-0">Tiêu đề</th>
+                                    <th class="border-bottom-0">Thuộc tính</th>
+                                    <th class="border-bottom-0">Trạng thái</th>
+                                    <th class="text-end border-bottom-0">Thời gian</th>
+                                    <th width="90" class="text-end border-bottom-0">&nbsp;</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <!-- END List -->
+                <!-- BEGIN List Footer -->
+                <div class="d-flex justify-content-between align-items-center py-2">
+                    <div class="d-flex align-items-center">
+                        <select class="form-select" style="min-width: 8rem;" aria-label="Select Action">
+                            <option selected>Hành động</option>
+                            <option value="1">Chỉnh sửa</option>
+                            <option value="2">Xoá</option>
+                          </select>
+                        <button class="btn btn-outline-secondary ms-2 w-100">Áp dụng</button>
+                    </div>
+                    <ul class="pagination mb-0">
+                        <li class="page-item disabled">
+                            <a class="page-link"><i class="fa-regular fa-arrow-left"></i></a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#"><i class="fa-regular fa-arrow-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END List Footer -->
+            </div>
+        </div>
+        <!-- END Site Main -->
+    </div>
+    <!-- END Site -->
+
+
+    <!-- BEGIN Inlucde JS  -->
+    <script src="includes/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- END Inlucde JS -->
+    <!-- BEGIN Only for this page  -->
+    <script>
+        jQuery(document).ready(function($) {
+
+        });
+    </script>
+    <!-- END Only for this page  -->
+</body>
+
+</html>

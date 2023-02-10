@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BEGIN Includes Styles  -->
+    <script src="includes/styles.js"></script>
+    <link rel="stylesheet" href="node_modules/jquery-datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- END Include Styles  -->
+    <title>Welly Fitness CMS - New</title>
+</head>
+
+<body>
+    <!-- BEGIN Site -->
+    <div class="site">
+        <script src="includes/site-sidebar.js"></script>
+        <!-- BEGIN Site Main -->
+        <div class="site-main px-3">
+            <div class="container-fluid py-3">
+                <div class="mb-3 d-flex align-items-center justify-content-between">
+                    <h4 class="mb-0">Thêm mới bài viết</h4>
+                </div>
+                <!-- BEGIN Editor -->
+                <div class="row">
+                    <div class="col-lg-9 col-md-8">
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg" value="" placeholder="Tiêu đề bài viết">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="mb-3" id="tiny"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <ul class="nav nav-tabs nav-w-tabs mb-0" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Thông tin thêm</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Khác</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content p-3 bg-white border border-radius-bottom">
+                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                    <h6 class="c-title mb-2 text-primary text-uppercase">Đây là tiêu đề</h6>
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-lg-3 col-md-4">
+                                            <label class="mb-1 mb-md-0">Lựa chọn</label>
+                                        </div>
+                                        <div class="col-lg-9 col-md-8">
+                                            <select class="form-select">
+                                                <option value="0">Lựa chọn thứ nhất</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-lg-3 col-md-4">
+                                            <label class="mb-1 mb-md-0">Tiêu đề</label>
+                                        </div>
+                                        <div class="col-lg-9 col-md-8">
+                                            <input type="text" class="form-control" value="" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-lg-3 col-md-4">
+                                            <label class="mb-1 mb-md-0">Mật khẩu</label>
+                                        </div>
+                                        <div class="col-lg-9 col-md-8">
+                                            <div class="input-group input-group-fake-input">
+                                                <input type="password" class="form-control border-end-0" value="" placeholder="">
+                                                <span class="input-group-text bg-transparent border-start-0"><i class="fa-solid fa-lock opacity-50"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-lg-3 col-md-4">
+                                            <label class="mb-1 mb-md-0">Email</label>
+                                        </div>
+                                        <div class="col-lg-9 col-md-8">
+                                            <div class="input-group input-group-fake-input">
+                                                <input type="text" class="form-control border-end-0" value="" placeholder="">
+                                                <span class="input-group-text bg-transparent border-start-0"><i class="fa-solid fa-envelope opacity-50"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-lg-3 col-md-4">
+                                            <label class="mb-1 mb-md-0">Lựa chọn ngày tháng</label>
+                                        </div>
+                                        <div class="col-lg-9 col-md-8">
+                                            <div class="input-group input-group-fake-input">
+                                                <input type="text" class="form-control border-end-0 date-picker" value="" placeholder="">
+                                                <span class="input-group-text bg-transparent border-start-0"><i class="fa-solid fa-calendar opacity-50"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <button class="btn btn-primary">Lưu thông tin</button>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">Đang cập nhật</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <!-- BEGIN Card Publish -->
+                        <div class="card card-publish mb-3">
+                            <div class="card-header d-flex align-items-center justify-content-between bg-transparent py-2">
+                                <h6 class="card-title mb-0">
+                                    <strong>Đăng bài</strong>
+                                </h6>
+                                <button class="btn btn-none btn-arrow-toggle p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseR_01" aria-expanded="true" aria-controls="collapseExample"><i class="fa-sharp fa-solid fa-caret-down icon"></i></button>
+                            </div>
+                            <div class="card-body border-top collapse show" id="collapseR_01">
+                                <ul class="list-unstyled list-icons">
+                                    <li><i class="fa-solid fa-map-pin icon"></i> Trạng thái <a href="#">Bản nháp</a></li>
+                                    <li><i class="fa-solid fa-eye icon"></i> Hiển thị <a href="#">Công khai</a></li>
+                                    <li><i class="fa-sharp fa-solid fa-calendar-days icon"></i> Ngày đăng <a href="#">Ngay lập tức</a></li>
+                                </ul>
+                                <div class="text-end">
+                                    <button class="btn btn-primary">Đăng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Card Publish -->
+                        <!-- BEGIN Card Category -->
+                        <div class="card card-category mb-3">
+                            <div class="card-header d-flex align-items-center justify-content-between bg-transparent py-2">
+                                <h6 class="card-title mb-0">
+                                    <strong>Danh mục</strong>
+                                </h6>
+                                <button class="btn btn-none btn-arrow-toggle p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseR_02" aria-expanded="true" aria-controls="collapseExample"><i class="fa-sharp fa-solid fa-caret-down icon"></i></button>
+                            </div>
+                            <div class="card-body border-top collapse show" id="collapseR_02">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="category_1">
+                                            <label class="form-check-label" for="category_1">Danh mục 01</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="category_2">
+                                            <label class="form-check-label" for="category_2">Danh mục 02</label>
+                                        </div>
+                                        <ul class="list-unstyled mb-0 ms-3">
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="category_21">
+                                                    <label class="form-check-label" for="category_21">Danh mục 02 - 01</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="category_22">
+                                                    <label class="form-check-label" for="category_22">Danh mục 02 - 02</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="category_3">
+                                            <label class="form-check-label" for="category_3">Danh mục 03</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- END Card Category -->
+                        <!-- BEGIN Card Meta -->
+                        <div class="card card-meta mb-3">
+                            <div class="card-header d-flex align-items-center justify-content-between bg-transparent py-2">
+                                <h6 class="card-title mb-0">
+                                    <strong>Thuộc tính bài viết</strong>
+                                </h6>
+                                <button class="btn btn-none btn-arrow-toggle p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseR_03" aria-expanded="true" aria-controls="collapseExample"><i class="fa-sharp fa-solid fa-caret-down icon"></i></button>
+                            </div>
+                            <div class="card-body border-top collapse show" id="collapseR_03">
+                                <p class="text-center mb-0"><a href="#" class="link">Thêm ảnh đại diện</a></p>
+                            </div>
+                        </div>
+                        <!-- END Card Meta -->
+                    </div>
+                </div>
+                <!-- END Editor -->
+            </div>
+        </div>
+        <!-- END Site Main -->
+    </div>
+    <!-- END Site -->
+
+
+    <!-- BEGIN Inlucde JS  -->
+    <script src="includes/plugins.js"></script>
+    <script src="node_modules/tinymce/tinymce.min.js"></script>
+    <script src="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- END Inlucde JS -->
+
+    <!-- BEGIN Only for this page  -->
+    <script>
+        tinymce.init({
+            selector: 'textarea#tiny',
+            plugins: ['a11ychecker', 'advlist', 'advcode', 'advtable', 'autolink', 'checklist', 'export', 'lists', 'link', 'image', 'charmap', 'preview', 'anchor', 'searchreplace', 'visualblocks', 'powerpaste', 'fullscreen', 'formatpainter', 'insertdatetime', 'media', 'table', 'help', 'wordcount'],
+            toolbar: 'undo redo | a11ycheck casechange blocks | bold italic backcolor | alignleft aligncenter alignright alignjustify |' + 'bullist numlist checklist outdent indent | removeformat | code table help'
+        })
+    </script>
+    <script>
+        jQuery(document).ready(function($) {
+            jQuery.datetimepicker.setLocale('vi');
+            jQuery('.date-picker').datetimepicker({
+                i18n: {
+                    vi: {
+                        months: [
+                            'Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4',
+                            'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8',
+                            'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12',
+                        ],
+                        dayOfWeek: [
+                            "Chủ nhật", "Thứ 2", "Thứ 3", "Thứ 4",
+                            "Thứ 5", "Thứ 6", "Thứ 7",
+                        ]
+                    }
+                },
+                timepicker: false,
+                format: 'd.m.Y'
+            });
+        });
+    </script>
+    <!-- END Only for this page  -->
+</body>
+
+</html>
