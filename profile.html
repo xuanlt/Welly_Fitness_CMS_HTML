@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BEGIN Includes Styles  -->
+    <script src="includes/styles.js"></script>
+    <link rel="stylesheet" href="node_modules/jquery-datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- END Include Styles  -->
+    <title>Welly Fitness CMS - Profile</title>
+</head>
+
+<body>
+    <!-- BEGIN Site -->
+    <div class="site">
+        <script src="includes/site-sidebar.js"></script>
+        <!-- BEGIN Site Main -->
+        <div class="site-main px-3">
+            <div class="container-fluid py-3">
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Hồ sơ người dùng</li>
+                    </ol>
+                </nav>
+                <!-- BEGIN Profile -->
+                <div class="profile">
+                    <!-- BEGIN Profile Header -->
+                    <div class="profile-header mb-3">
+                        <div class="profile-cover">
+                            <img src="img/login-banner.jpeg" class="profile-cover-image" alt="">
+                        </div>
+                        <div class="profile-header-inner">
+                            <div class="profile-avatar">
+                                <img src="img/temp/avatar_image_0.jpg" class="profile-image" alt="">
+                            </div>
+                            <div class="profile-basic-info d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="name mb-0">Nguyễn Anh Minh <span class="small text-success"><i class="fa-solid fa-circle-check"></i></span></h5>
+                                    <p class="mb-0 meta opacity-50"><span class="account-type">Quản trị viên</span></p>
+                                </div>
+                                <a href="login.html" class="btn btn-sm btn-outline-secondary px-3"><i class="fa-solid fa-power-off"></i><span class="ms-2 d-none d-md-inline-block">Đăng xuất</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Profile Header -->
+                    <div class="row">
+                        <div class="col-lg-8 col-xl-8">
+                            <!-- BEGIN Card Meta -->
+                            <div class="card shadow-sm  mb-3">
+                                <div class="card-header d-flex align-items-center justify-content-between bg-transparent py-2">
+                                    <h6 class="card-title mb-0">
+                                        <strong><i class="fa-sharp fa-solid fa-circle-user icon opacity-50 me-2"></i>Thông tin cá nhân</strong>
+                                    </h6>
+                                </div>
+                                <div class="card-body border-top">
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-md-4">
+                                            <label class="text-secondary mb-1">Họ và tên</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control mb-1" value="Nguyễn Anh Minh" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-md-4">
+                                            <label class="text-secondary mb-1">Giới tính</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="gender" id="male" value="option1">
+                                                <label class="form-check-label" for="male">Nam</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="gender" id="female" value="option2">
+                                                <label class="form-check-label" for="female">Nữ</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-md-4">
+                                            <label class="text-secondary mb-1">Ngày sinh</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="input-group input-group-fake-input mb-1">
+                                                <input type="text" class="form-control border-end-0 date-picker" value="" placeholder="DD/MM/YYYY">
+                                                <span class="input-group-text bg-transparent border-start-0"><i class="fa-solid fa-calendar opacity-50"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-md-4">
+                                            <label class="text-secondary mb-1">Chứng minh thư</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control mb-1" value="" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-md-4">
+                                            <label class="text-secondary mb-1">Địa chỉ</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control mb-1" value="Hà Nội, Việt Nam" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-md-4">
+                                            <label class="text-secondary mb-1">Thông tin khác</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <textarea class="form-control" rows="3" cols="1"></textarea>
+                                        </div>
+                                    </div>
+                                    <hr class="my-4">
+                                    <h6 class="c-title text-primary"><strong>Thông tin tài khoản</strong></h6>
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-md-4">
+                                            <label class="text-secondary mb-1">Email</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="input-group input-group-fake-input mb-1">
+                                                <input type="text" class="form-control border-end-0" value="nguyenanhminh@gmail.com" placeholder="">
+                                                <span class="input-group-text bg-transparent border-start-0"><i class="fa-solid fa-envelope opacity-50"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-md-4">
+                                            <label class="text-secondary mb-1">Số điện thoại</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="input-group input-group-fake-input mb-1">
+                                                <input type="text" class="form-control border-end-0" value="123456789" placeholder="" disabled>
+                                                <span class="input-group-text bg-transparent border-start-0"><i class="fa-solid fa-phone opacity-50"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-md-4">
+                                            <label class="text-secondary mb-1">Mật khẩu</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="input-group input-group-fake-input">
+                                                <input type="password" class="form-control border-end-0" value="" placeholder="">
+                                                <span class="input-group-text bg-transparent border-start-0"><i class="fa-solid fa-lock opacity-50"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-md-4">
+                                            <label class="text-secondary mb-1">Nhập lại Mật khẩu</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="input-group input-group-fake-input">
+                                                <input type="password" class="form-control border-end-0" value="" placeholder="">
+                                                <span class="input-group-text bg-transparent border-start-0"><i class="fa-solid fa-lock opacity-50"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <button class="btn btn-primary">Lưu thông tin</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END Card Meta -->
+                        </div>
+                        <div class="col-lg-4 col-xl-3">
+                            <!-- BEGIN Card Activities History -->
+                            <div class="card card-activities-history mb-3">
+                                <div class="card-header d-flex align-items-center justify-content-between bg-transparent py-2">
+                                    <h6 class="card-title mb-0">
+                                        <strong><i class="fa-solid fa-clock icon opacity-50 me-2"></i> Lịch sử hoạt động</strong>
+                                    </h6>
+                                    <button class="btn btn-none btn-arrow-toggle p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_activities_history" aria-expanded="true" aria-controls="collapseExample"><i class="fa-sharp fa-solid fa-caret-down icon"></i></button>
+                                </div>
+                                <div class="card-body border-top collapse show" id="collapse_activities_history">
+                                    <ul class="list-unstyled timeline-basic mb-0 nicescroll" style="max-height:10rem">
+                                        <li class="item">
+                                            <div class="small text-secondary">15:30 24/24/2022</div>
+                                            <div><strong>Đăng nhập hệ Thống</strong></div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="small text-secondary">15:30 24/24/2022</div>
+                                            <div><strong>Check in buổi tập</strong></div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="small text-secondary">15:30 24/24/2022</div>
+                                            <div><strong>Check out buổi tập </strong></div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="small text-secondary">15:30 24/24/2022</div>
+                                            <div><strong>Đăng ký khoá tập Gym</strong></div>
+                                        </li>
+                                    </ul>
+                                    <div class="text-center">
+                                        <a href="#" class="small link">Xem chi tiết</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END Activities History -->
+                            <!-- BEGIN Card Activities History -->
+                            <div class="card card-wellypoints mb-3">
+                                <div class="card-header d-flex align-items-center justify-content-between bg-transparent py-2">
+                                    <h6 class="card-title mb-0">
+                                        <strong>Điểm Welly Points</strong>
+                                    </h6>
+                                    <button class="btn btn-none btn-arrow-toggle p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_wellypoints" aria-expanded="true" aria-controls="collapseExample"><i class="fa-sharp fa-solid fa-caret-down icon"></i></button>
+                                </div>
+                                <div class="card-body border-top collapse show" id="collapse_wellypoints">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2">
+                                            <img src="img/logo-icon-fill.svg" alt="" class="rounded-circle" width="32" height="32">
+                                        </div>
+                                        <div class="fs-3">
+                                            12
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END Activities History -->
+                        </div>
+                    </div>
+                </div>
+                <!-- END Profile -->
+
+
+            </div>
+        </div>
+        <!-- END Site Main -->
+    </div>
+    <!-- END Site -->
+
+
+    <!-- BEGIN Inlucde JS  -->
+    <script src="includes/plugins.js"></script>
+    <script src="node_modules/tinymce/tinymce.min.js"></script>
+    <script src="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- END Inlucde JS -->
+    <!-- BEGIN Only for this page  -->
+    <script>
+        jQuery(document).ready(function($) {
+            jQuery.datetimepicker.setLocale('vi');
+            jQuery('.date-picker').datetimepicker({
+                i18n: {
+                    vi: {
+                        months: [
+                            'Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4',
+                            'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8',
+                            'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12',
+                        ],
+                        dayOfWeek: [
+                            "Chủ nhật", "Thứ 2", "Thứ 3", "Thứ 4",
+                            "Thứ 5", "Thứ 6", "Thứ 7",
+                        ]
+                    }
+                },
+                timepicker: false,
+                format: 'd/m/Y'
+            });
+        });
+    </script>
+    <!-- END Only for this page  -->
+</body>
+
+</html>

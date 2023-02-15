@@ -2,6 +2,7 @@
 
 // scss-docs-start gray-color-variables
 $white: #fff !default;
+$gray-200: #e9ecef !default;
 $black: #000 !default;
 $dark: #222 !default;
 // scss-docs-end gray-color-variables
@@ -20,6 +21,9 @@ $cyan: #0dcaf0 !default;
 // scss-docs-start theme-color-variables
 $primary: $indigo !default;
 // scss-docs-end theme-color-variables
+// scss-docs-start border-variables
+$border-color: $gray-200 !default;
+// scss-docs-end border-variables
 // $font-size-base affects the font size of the body text
 $font-size-base: 0.875rem !default;
 // Settings for the `<body>` element.
@@ -40,7 +44,8 @@ $input-focus-box-shadow: none !default;
 // scss-docs-end form-input-variables
 // scss-docs-start card-variables
 $card-border-color: rgba(0, 0, 0, 0) !default;
-$card-cap-bg: rgba($primary, .05) !default;
+$card-cap-bg: rgba($primary, .15) !default;
+$card-border-width: 0 !default;
 // scss-docs-end card-variables
 // scss-docs-start table-variables
 $table-hover-bg-factor: .04 !default;
@@ -208,6 +213,9 @@ strong {
 .card {
     .card-header {
         min-height: 2.5rem;
+        .card-title {
+            line-height: 1.5rem;
+        }
         .dropdown-menu {
             transform: translate(0px, 48px);
         }
@@ -246,7 +254,7 @@ strong {
             }
         }
         .form-control:disabled+.input-group-text {
-            background-color: #e9ecef;
+            background-color: #e9ecef !important;
         }
     }
     &.input-group-search {
@@ -900,3 +908,98 @@ strong {
 /*-- Site Footer --*/
 
 .site-footer {}
+
+
+/* Profile */
+
+.profile {
+    .profile-header {
+        background-color: #fff;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        .profile-cover {
+            height: 10rem;
+            background-color: #ccc;
+            overflow: hidden;
+            position: relative;
+            border-top-left-radius: 1.5rem;
+            border-top-right-radius: 1.5rem;
+            &:before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background-color: rgba(0, 0, 0, 0.2);
+                position: absolute;
+            }
+            .profile-cover-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .profile-header-inner {
+            padding: 1rem 1rem 1rem 8rem;
+            min-height: 3rem;
+            position: relative;
+            .profile-avatar {
+                width: 6rem;
+                height: 6rem;
+                background-color: rgba(0, 0, 0, 0.1);
+                position: absolute;
+                left: 1rem;
+                top: -2rem;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 3px solid #fff;
+                .profile-image {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+/* Timeline */
+
+.timeline-basic {
+    position: relative;
+    &:before {
+        width: 1px;
+        height: 100%;
+        left: 0.5rem;
+        top: 0;
+        content: '';
+        position: absolute;
+        background-color: #eee;
+        margin-left: -1px;
+    }
+    .item {
+        margin-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        position: relative;
+        &:before {
+            content: '';
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color: #666;
+            border-radius: 50%;
+            position: absolute;
+            left: 0.25rem;
+            top: 0.25rem;
+        }
+        &:hover {
+            color: #000;
+            &:before {
+                background-color: $primary;
+            }
+        }
+    }
+}

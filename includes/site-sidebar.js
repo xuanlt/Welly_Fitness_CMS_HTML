@@ -14,7 +14,7 @@ document.write('            <!-- BEGIN Sidebar Content -->\n');
 document.write('            <div class=\"sidebar-content px-3 py-2\">\n');
 document.write('                <!-- BEGIN User BLock -->\n');
 document.write('                <div class=\"sidebar-user-block mb-3\">\n');
-document.write('                    <a href=\"#\" class=\"user-link d-block text-white\">\n');
+document.write('                    <a href=\"profile.html\" class=\"user-link d-block text-white\">\n');
 document.write('                        <div class=\"item-user d-flex align-items-center\">\n');
 document.write('                            <div class=\"flex-shrink-0 item-thumb\">\n');
 document.write('                                <img src=\"img/temp/avatar_image_0.jpg\" class=\"avatar-image rounded-circle\" alt=\"\">\n');
